@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>대사 한 줄 — 표현 노트</title>
+<title>문장 한 줄 — 표현 노트</title>
 <style>
   :root{
     --bg: #14141a;
@@ -163,6 +163,18 @@
     border-radius: 10px;
     padding: 2px 8px;
     margin-bottom: 10px;
+  }
+  .expr-source.news { color: var(--sub); border-color: var(--sub-dim); }
+  .grad-badge {
+    display: inline-block;
+    margin-left: 8px;
+    font-family: var(--mono);
+    font-size: 10px;
+    color: #1a1a12;
+    background: var(--sub);
+    border-radius: 10px;
+    padding: 1px 8px;
+    letter-spacing: 0;
   }
   .expr-attempts {
     border-top: 1px dashed var(--rule);
@@ -686,15 +698,15 @@
 <body>
   <div class="film-strip"></div>
   <header>
-    <div class="eyebrow">EP. LOG — English Phrase Archive</div>
-    <h1>대사 한 줄</h1>
-    <div class="sub-desc">드라마박스 대사에서 뽑은 숙어와, 그 과정에서 물어본 문법을 따로 정리했어요</div>
+    <div class="eyebrow">LINE LOG — Drama &amp; News English Archive</div>
+    <h1>문장 한 줄</h1>
+    <div class="sub-desc">드라마 대사와 뉴욕타임스 기사(Newspresso)에서 뽑은 표현, 그리고 공부하며 물어본 문법을 정리했어요</div>
   </header>
 
   <div class="tabs">
     <button class="tab-btn active" data-tab="quiz">오늘의 퀴즈<span class="n">DAILY</span></button>
-    <button class="tab-btn" data-tab="idiom">숙어 · 표현<span class="n">31개</span></button>
-    <button class="tab-btn" data-tab="grammar">문법 Q&A<span class="n">10개</span></button>
+    <button class="tab-btn" data-tab="idiom">숙어 · 표현<span class="n">33개</span></button>
+    <button class="tab-btn" data-tab="grammar">문법 Q&A<span class="n">11개</span></button>
   </div>
 
   <main>
@@ -1084,6 +1096,30 @@
         </div>
       </div>
 
+      <div class="expr-card">
+        <div class="q-num">NYT · #32</div>
+        <div class="expr-en">consumerism</div>
+        <div class="expr-meaning">소비 활동, 소비 성향 — consumption은 "얼마나 썼나/마셨나"(양), consumerism은 "얼마나 사고 싶어 하고 사나"(구매 행동). '소비주의'라는 이념적 뜻도 있어서 보고서·메일에서는 consumer spending이 더 명확</div>
+        <div class="expr-source news">Newspresso · Generational · "the time of life when consumerism typically declines"</div>
+        <div class="expr-attempts">
+          <div class="label">비즈니스 예문</div>
+          <div class="attempt-line">As consumerism slows in aging markets, replacement demand matters more.</div>
+          <div class="attempt-line">Consumer spending in Japan has been flat this year. (보고서에서는 이 표현이 더 명확)</div>
+        </div>
+      </div>
+
+      <div class="expr-card">
+        <div class="q-num">NYT · #33</div>
+        <div class="expr-en">the turn of the century</div>
+        <div class="expr-meaning">세기가 바뀔 무렵, 세기 전환기 — 요즘 글에서는 보통 2000년 전후. turn = 방향이 꺾이는 지점. 오래된 글이면 1900년 무렵일 수도 있음</div>
+        <div class="expr-source news">Newspresso · Generational · "after the turn of the century"</div>
+        <div class="expr-attempts">
+          <div class="label">비즈니스 예문</div>
+          <div class="attempt-line">Since the turn of the century, Asia has become our fastest-growing market.</div>
+          <div class="attempt-line">Sales usually pick up at the turn of the year. (at the turn of the year = 연말연시)</div>
+        </div>
+      </div>
+
     </div>
 
     <div class="tab-panel" id="panel-grammar">
@@ -1218,6 +1254,20 @@
           <div class="ok">✓ Let me know. (동사원형 know, to know 아님)</div>
           <div class="ok">✓ She let him go.</div>
           <div class="ok">✓ I won't let you fail.</div>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <div class="q-num">Q11</div>
+        <div class="q-title">"In his report, Rob McMillan…" 주어가 나오기 전에 his를 써도 되나요?</div>
+        <div class="q-context">Newspresso Generational 기사 "In his annual State of the U.S. Wine Industry report, … Rob McMillan, …" 구조 질문</div>
+        <div class="q-answer">
+          대명사가 뒤에 나올 대상을 미리 가리키는 <b>후방 조응(cataphora)</b>이에요. <b>문장 앞 수식구 안</b>의 대명사(his)가 <b>바로 뒤 주절의 주어</b>(Rob McMillan)를 가리킬 때 성립해요. 기사에서 출처·맥락을 먼저 보여주고 사람을 소개할 때 자주 쓰는 패턴이에요. 대명사가 주절의 주어 자리에 오면(He said…, McMillan…) 다른 사람으로 읽히니 주의.
+        </div>
+        <div class="q-examples">
+          <div class="ok">✓ In his report, Rob McMillan said demand is falling.</div>
+          <div class="ok">✓ In its latest outlook, the distributor forecast lower demand. (회사 주어 → its)</div>
+          <div>✕ He said in the report that Rob McMillan… (He ≠ McMillan으로 읽힘)</div>
         </div>
       </div>
 
@@ -1436,7 +1486,705 @@
       title: 'have + 목적어 + as + 역할',
       explain: 'as는 "~의 자격/역할로"라는 뜻. if he were는 독립적인 조건절이라 별도 문장 구조가 필요한데, have...as는 "그 역할로 여기고 있다"를 동사구 하나로 압축해요.',
       examples: ['She has her sister as a roommate.', 'We have Tom as our team leader.'] },
+
+    // ---- Newspresso (NYT) ----
+    { id: 'nyt-consumerism', type: '단어', sentence: "Consumerism tends to slow down as the population ages.", mask: 'Consumerism', kr: '인구가 고령화되면서 소비 활동은 둔화되는 경향이 있다.',
+      title: 'consumerism [kənˈsuːmərɪzəm]',
+      explain: '소비 활동, 소비 성향. consumption이 "얼마나 썼나/마셨나"라는 양이라면, consumerism은 "얼마나 사고 싶어 하고 사나"라는 구매 행동이에요. "소비주의"라는 이념적 뜻도 있어서, 보고서나 메일에서 지출 감소를 말할 땐 consumer spending이 더 명확합니다.',
+      examples: ['Consumerism typically declines after retirement.', 'Consumer spending in Japan has been flat this year.'] },
+
+    { id: 'nyt-turn-of-century', type: '숙어', sentence: "Smartphones became common after the turn of the century.", mask: 'after the turn of the century', kr: '2000년대 들어(세기가 바뀐 뒤) 스마트폰이 흔해졌다.',
+      title: 'the turn of the century',
+      explain: '세기가 바뀔 무렵. turn은 방향이 꺾이는 지점이라, 시간이 다음 세기로 넘어가는 시점을 말해요. 요즘 글에서는 보통 2000년 전후. since the turn of the century(2000년대 들어 지금까지)는 장기 추세를 말할 때 자주 씁니다.',
+      examples: ['Since the turn of the century, Asia has become our fastest-growing market.', 'Sales usually pick up at the turn of the year.'] },
+
+    { id: 'gr-cataphora', type: '문법', sentence: "In its latest report, the company announced record sales in Asia.", mask: 'In its latest report, the company', kr: '[상황] 회사가 최근 보고서에서 아시아 매출 최고치를 발표했다고 말해보세요 (보고서를 문장 앞에 두고 대명사 먼저)',
+      title: '대명사 먼저 쓰기 (후방 조응, cataphora)',
+      explain: '문장 앞 수식구 안의 대명사(its/his)가 바로 뒤 주절의 주어를 가리키는 구조예요. 출처·맥락을 먼저 보여주는 기사체 단골 패턴. 대명사가 주절의 주어 자리에 오면 다른 대상으로 읽히니 주의하세요.',
+      examples: ['In his report, Rob McMillan said demand is falling.', 'In her speech, the CEO outlined three priorities.'] },
   ];
+
+  // ---- Newspresso (NYT) 학습 항목: 카드(숙어·표현 / 문법 Q&A)와 퀴즈를 한 곳에서 관리 ----
+  // tab: 'idiom' → 숙어·표현 탭 카드, 'grammar' → 문법 Q&A 탭 카드, null → 퀴즈만
+  // 비슷한 단어 묶음은 퀴즈 1문제로 합치고, 차이는 설명(meaning)에 정리
+  const NYT_ENTRIES = [
+    { id: "nyt-entice", tab: "idiom", type: "단어", title: "entice (someone) to do",
+      meaning: "혜택·매력을 내밀어 끌어들이다. attract(저절로 끌림), lure(꾀어냄, 부정적), tempt(욕구 자극), persuade(논리로 설득)와 구분. entice + 사람 + to do / into -ing / with 혜택",
+      src: "“has not done enough to entice them to become regular consumers”",
+      ex: ["The promotion is designed to entice customers with free installation.", "We need regular consumers, not one-time buyers."],
+      s: "We offered discounts to entice new dealers to switch to our brand.", m: "entice new dealers to switch", kr: "신규 대리점들이 우리 브랜드로 바꾸도록 끌어들이려고 할인을 제공했다." },
+
+    { id: "nyt-encroach", tab: "idiom", type: "숙어", title: "encroach on (something)",
+      meaning: "남의 영역을 조금씩 잠식하다. encroaching = 원치 않아도 슬금슬금 다가오는 (encroaching retirement = 서서히 다가오는 은퇴)",
+      src: "“coupled with the encroaching retirement”",
+      ex: ["Online sellers are encroaching on traditional dealers' business.", "the encroaching retirement of baby boomers"],
+      s: "Chinese brands are encroaching on our market share.", m: "encroaching on", kr: "중국 브랜드들이 우리 시장점유율을 잠식하고 있다." },
+
+    { id: "nyt-pose-threat", tab: "idiom", type: "숙어", title: "pose a threat / risk / challenge to",
+      meaning: "~에 위협(위험·과제)이 되다. pose = 들이밀다. 보고서 단골 표현",
+      src: "“poses a primary threat to the business”",
+      ex: ["Counterfeit tires pose a threat to our brand image.", "The new tariff poses a challenge to our exports."],
+      s: "Rising raw material costs pose a serious risk to our profitability.", m: "pose a serious risk to", kr: "원자재 가격 상승은 우리 수익성에 심각한 위험이 된다." },
+
+    { id: "nyt-address", tab: "idiom", type: "단어", title: "address (a problem) vs solve",
+      meaning: "address = 주소 → 편지를 직접 보내듯 문제에 정면으로 대응하다(착수). solve = 완전히 해결. tackle(달려들다), combat(맞서 싸우다)도 같은 계열. 목적어를 바로 받음 (address about ✕)",
+      src: "“That issue has yet to be addressed or solved”",
+      ex: ["The quality claim has yet to be addressed.", "We addressed the issue, but we haven't solved it yet."],
+      s: "We need to address the dealers' complaints immediately.", m: "address the dealers' complaints", kr: "대리점들의 불만에 즉시 대응해야 한다." },
+
+    { id: "nyt-dynamic", tab: "idiom", type: "단어", title: "dynamic (명사)",
+      meaning: "흐름, 판도, 역학 관계. situation 대신 쓰면 세련돼 보임",
+      src: "“to change this dynamic”",
+      ex: ["The pricing dynamic in Thailand is shifting.", "We need to understand the dynamic between dealers and distributors."],
+      s: "The entry of Chinese brands has changed the market dynamic.", m: "the market dynamic", kr: "중국 브랜드의 진입으로 시장 판도가 바뀌었다." },
+
+    { id: "nyt-place-order", tab: "idiom", type: "숙어", title: "place an order / dealer vs distributor",
+      meaning: "주문을 넣다. 대리점 = dealer, 큰 유통사 = distributor (agency는 광고대행사 같은 대행사 느낌)",
+      src: "작문 연습",
+      ex: ["Please place your order by Friday.", "We have a strong dealer network in Thailand."],
+      s: "The distributor placed a large order for winter tires.", m: "placed a large order", kr: "그 유통사가 겨울 타이어를 대량 주문했다." },
+
+    { id: "nyt-something-of-a", tab: "idiom", type: "숙어", title: "something of a ~ ↔ not much of a ~",
+      meaning: "something of a = 꽤 ~한 편 (겸손·농담 섞인 톤), not much of a = 그다지 ~한 사람은 아닌",
+      src: "“I am something of an expert on being unable to persuade millennials”",
+      ex: ["I'm something of a coffee snob.", "I'm not much of a golfer, but I'd love to join."],
+      s: "She's something of a legend in the Japanese market.", m: "something of a legend", kr: "그녀는 일본 시장에서 거의 전설 같은 사람이다." },
+
+    { id: "nyt-wine-snob", tab: "idiom", type: "표현", title: "I'm not much of a wine snob",
+      meaning: "X snob = X를 유난히 따지는 사람 (나한테 쓰면 귀여운 고백, 남한테는 무례할 수 있음). leave the choice to you = 선택은 맡길게요 (I'll leave it to you). connoisseur는 칭찬, snob은 농담·비꼼",
+      src: "작문: 거래처와 저녁 자리",
+      ex: ["I'm a bit of a coffee snob, so I bring my own beans on business trips.", "I'll leave it to you."],
+      s: "I'm not much of a wine snob, so I'll leave the choice to you.", m: "not much of a wine snob, so I'll leave the choice to you", kr: "와인은 잘 몰라서요, 고르시는 걸로 할게요." },
+
+    { id: "nyt-as-discussed", tab: "idiom", type: "표현", title: "as discussed / as requested / as ~ points out",
+      meaning: "여기서 as = ~대로, ~듯이. as agreed, as mentioned, as the report shows, as you know. 메일 첫 문장 단골",
+      src: "“as Mr. McMillan of Silicon Valley Bank points out” / “do as I suggest”",
+      ex: ["As the report noted, we exceeded our target this quarter.", "As requested, I've attached the price list."],
+      s: "As discussed in yesterday's meeting, we will ship the order by Friday.", m: "As discussed", kr: "어제 회의에서 논의한 대로, 금요일까지 주문품을 선적하겠습니다." },
+
+    { id: "nyt-overlook", tab: "idiom", type: "단어", title: "overlook",
+      meaning: "간과하다, 못 보고 지나치다 (위에서 내려다보다 바로 밑을 놓치는 이미지). overlook a shortcoming = 결점을 눈감아 주다",
+      src: "“Generation X … has been overlooked”",
+      ex: ["Don't overlook the small dealers.", "The report overlooked rising shipping costs."],
+      s: "We may have overlooked the demand from small dealers.", m: "overlooked", kr: "우리가 소규모 대리점들의 수요를 간과했을 수도 있다." },
+
+    { id: "nyt-cut-prices", tab: "idiom", type: "숙어", title: "cut / lower prices · competitor",
+      meaning: "가격을 내리다 = cut / lower prices (cut은 과거형도 cut). 경쟁사 = competitor",
+      src: "작문 연습",
+      ex: ["Our competitors lowered their prices last month.", "Dealers are cutting prices to clear inventory."],
+      s: "Our competitors cut their prices by 10% in September.", m: "cut their prices by 10%", kr: "경쟁사들이 9월에 가격을 10% 내렸다." },
+
+    { id: "nyt-figure-into", tab: "idiom", type: "숙어", title: "figure into",
+      meaning: "~에 반영되다, 고려 요소가 되다 (figure = 수치 → 계산 안에 들어가다). factor in = 계산에 넣다",
+      src: "“has too few years of legal drinking to really figure into the data”",
+      ex: ["Shipping costs should figure into the final price.", "Did you factor in the exchange rate?"],
+      s: "Exchange rates figure into our pricing decisions.", m: "figure into", kr: "환율은 우리 가격 결정에 반영되는 요소다." },
+
+    { id: "nyt-draw-conclusion", tab: "idiom", type: "숙어", title: "draw a conclusion",
+      meaning: "결론을 내리다 (make a conclusion ✕, reach a conclusion은 가능). It's too early to ~ = ~하기엔 이르다",
+      src: "작문 연습",
+      ex: ["We reached a conclusion after the meeting.", "It's too early to say."],
+      s: "It's too early to draw a conclusion.", m: "draw a conclusion", kr: "결론을 내리기엔 너무 이르다." },
+
+    { id: "nyt-launch", tab: "idiom", type: "단어", title: "launch vs produce · new / upcoming product",
+      meaning: "출시하다 = launch (produce는 생산하다). 이미 나온 제품 = new / newly launched, 곧 나올 제품 = upcoming (launching product ✕)",
+      src: "작문 연습",
+      ex: ["We don't have enough time to launch a new product this quarter.", "The upcoming model will be produced in Indonesia."],
+      s: "We plan to launch our upcoming EV tire in March.", m: "launch our upcoming EV tire", kr: "곧 나올 전기차 타이어를 3월에 출시할 계획이다." },
+
+    { id: "nyt-those-age", tab: "idiom", type: "표현", title: "those (aged) 35 to 64 / those under 30",
+      meaning: "those = people. 숫자 뒤에 years old가 생략되면 나이. 퍼센트라면 반드시 percent / %가 붙음",
+      src: "“for those 35 to 64”",
+      ex: ["Those aged 25 to 34 buy most of our SUV tires.", "Those over 50 prefer visiting a tire shop."],
+      s: "Those under 30 prefer buying tires online.", m: "Those under 30", kr: "30세 미만은 온라인으로 타이어 사는 걸 선호한다." },
+
+    { id: "nyt-split-between", tab: "idiom", type: "숙어", title: "split between A and B",
+      meaning: "A와 B로 (대략 반반) 나뉘다. be split on ~ = ~를 두고 의견이 갈리다",
+      src: "“The top choice was roughly split between wine and beer”",
+      ex: ["The team is split on the new pricing.", "Votes were split between the two proposals."],
+      s: "Our orders were roughly split between SUV and PCR tires.", m: "roughly split between", kr: "우리 주문은 SUV 타이어와 승용차 타이어로 대략 반반 나뉘었다." },
+
+    { id: "nyt-trail", tab: "idiom", type: "단어", title: "trail / trailing in the distance",
+      meaning: "뒤처지다 (경주에서 멀찍이 뒤따라오는 이미지). in the distance = 저 멀리",
+      src: "“with the other options trailing in the distance”",
+      ex: ["Sales of other sizes trailed far behind.", "We trail the market leader by 5 points."],
+      s: "Our brand trails Michelin and Bridgestone in Thailand.", m: "trails", kr: "태국에서 우리 브랜드는 미쉐린과 브리지스톤에 뒤처져 있다." },
+
+    { id: "nyt-won-weakened", tab: "idiom", type: "표현", title: "the won weakened / remain flat",
+      meaning: "“환율이 올랐다”는 통화를 주어로: the won weakened(원화 약세), the dollar strengthened(달러 강세). remain flat = 제자리걸음",
+      src: "작문 연습",
+      ex: ["Sales in Thailand remained flat this quarter.", "The dollar strengthened against the won."],
+      s: "Import costs rose as the won weakened.", m: "the won weakened", kr: "원화가 약세를 보이면서 수입 비용이 올랐다." },
+
+    { id: "nyt-exchange-fluct", tab: "idiom", type: "숙어", title: "exchange rate fluctuations / be concerned about",
+      meaning: "환율 변동 (보고서: currency volatility). be concerned about = 걱정하다, be concerned with = 관심 있다·관련되다",
+      src: "“younger consumers are truly concerned with social justice”",
+      ex: ["Currency volatility hurt our margins.", "Customers are concerned with safety more than design."],
+      s: "Dealers are concerned about exchange rate fluctuations.", m: "concerned about exchange rate fluctuations", kr: "대리점들이 환율 변동을 걱정하고 있다." },
+
+    { id: "nyt-a-thing", tab: "idiom", type: "표현", title: "barely a thing / becoming a thing",
+      meaning: "a thing = 실제로 있는 것, 유행 (구어). Is that a thing? / It's becoming a thing. barely = 거의 ~ 않다. 덤: ~ ago(before ✕), electric(전기) vs electronic(전자), EV-specific(전기차 전용), Southeast Asia, online(in ✕)",
+      src: "“Single malt Scotch was barely a thing”",
+      ex: ["These days, buying tires online is becoming a thing.", "All-season tires are gaining popularity in Korea. (보고서용)"],
+      s: "Five years ago, EV-specific tires were barely a thing in Southeast Asia.", m: "were barely a thing", kr: "5년 전만 해도 동남아에서 전기차 전용 타이어는 거의 존재하지도 않았다." },
+
+    { id: "nyt-very-real", tab: "idiom", type: "표현", title: "a real thing / very real · intense competition",
+      meaning: "~ is a real thing = 진짜 있는 일이다 (캐주얼). 회의·보고서: is (very) real / a genuine concern. real은 형용사라 a 없이 is very real. 경쟁은 intense / fierce competition (harsh ✕)",
+      src: "“The increase in competition is a real thing”",
+      ex: ["Burnout is a real thing.", "The threat from Chinese brands is very real."],
+      s: "In Southeast Asia, intense competition is a very real problem.", m: "intense competition is a very real problem", kr: "동남아에서 치열한 경쟁은 정말 심각한 문제다." },
+
+    { id: "nyt-more-for", tab: "idiom", type: "숙어", title: "more for A than for B",
+      meaning: "B보다는 A 때문에. 원문의 bought는 동사가 아니라 과거분사(구매된)",
+      src: "“bought more for their alcoholic punch than for the aesthetic pleasures”",
+      ex: ["Dealers choose us more for our price than for our brand.", "People order cocktails more for the taste than for the alcohol."],
+      s: "Customers buy this tire more for its mileage than for its design.", m: "more for its mileage than for its design", kr: "고객들은 디자인보다는 내구성(주행거리) 때문에 이 타이어를 산다." },
+
+    { id: "nyt-pack-punch", tab: "idiom", type: "숙어", title: "pack a punch / punch",
+      meaning: "punch = 주먹 한 방 → 강한 효과. pack a punch = 작지만 강력하다 (are pack ✕ → packs). alcoholic punch = 취하게 하는 한 방",
+      src: "“their alcoholic punch”",
+      ex: ["This small engine packs a punch.", "Our compact tire is light, but it packs a punch on wet roads."],
+      s: "Our new product is small, but it packs a punch.", m: "packs a punch", kr: "우리 신제품은 작지만 강력하다." },
+
+    { id: "nyt-aesthetic", tab: "idiom", type: "단어", title: "aesthetic [esˈθetɪk] · might have p.p.",
+      meaning: "미적인, 감상의 / (명사) 미적 스타일. might have p.p. = ~했을 수도 있다 (the aesthetic pleasures they might have offered)",
+      src: "“the aesthetic pleasures they might have offered”",
+      ex: ["The new design has strong aesthetic appeal.", "We might have lost the deal without the discount."],
+      s: "Younger buyers care about the aesthetic of the tread design.", m: "aesthetic", kr: "젊은 구매자들은 트레드 디자인의 미적인 부분을 신경 쓴다." },
+
+    { id: "nyt-dominated", tab: "idiom", type: "숙어", title: "in the thrall of / dominated by · few vs a few",
+      meaning: "in the thrall of = ~에 꼼짝없이 지배당한 (thrall = 노예, 문학적). 비즈니스는 dominated by / controlled by. few = 거의 없는(부정), a few = 몇몇(긍정)",
+      src: "“in the thrall of huge breweries”",
+      ex: ["Few dealers ordered. (거의 없었다)", "A few dealers ordered. (몇몇은 주문했다)"],
+      s: "The Vietnamese PCR tire market is dominated by a few global players.", m: "is dominated by a few global players", kr: "베트남 승용차 타이어 시장은 소수의 글로벌 업체들이 장악하고 있다." },
+
+    { id: "nyt-bland", tab: "idiom", type: "단어", title: "bland / insipid / anodyne",
+      meaning: "bland = 밋밋한(일상어), insipid = 밍밍하고 맛없는(부정적, 문어체), anodyne = 아무 자극 없이 무난하기만 한(비판적), inoffensive = 거슬리지 않는",
+      src: "“huge breweries with insipid products” / “an anodyne marketing campaign”",
+      ex: ["These slogans are likely to be bland and inoffensive.", "The presentation was a bit insipid."],
+      s: "Our competitor's new product has a bland design.", m: "bland", kr: "경쟁사 신제품은 디자인이 밋밋하다." },
+
+    { id: "nyt-mediocre", tab: "idiom", type: "단어", title: "mediocre / at best",
+      meaning: "그저 그런, 기대 이하 (average는 중립, mediocre는 부정적). at best = 잘 봐줘야",
+      src: "“a glass of mediocre wine”",
+      ex: ["We can't compete with mediocre quality at a premium price.", "The response was lukewarm at best."],
+      s: "This quarter's results were mediocre at best.", m: "mediocre at best", kr: "이번 분기 실적은 잘 봐줘야 그저 그런 수준이었다." },
+
+    { id: "nyt-valued-partners", tab: "idiom", type: "표현", title: "esteemed / valued partners · craft",
+      meaning: "esteemed = 존경받는, 높이 평가받는 (공식 서신). 평소 메일에는 valued가 무난. craft = 장인 기술 (craft beer의 craft)",
+      src: "“Cocktail-making has become an esteemed craft”",
+      ex: ["He is an esteemed figure in the industry.", "Tire design is a craft that takes years to master."],
+      s: "Thank you to all our valued partners for your continued support.", m: "valued partners", kr: "변함없이 지원해 주신 소중한 파트너 여러분께 감사드립니다." },
+
+    { id: "nyt-count-toward", tab: "idiom", type: "숙어", title: "count / count toward",
+      meaning: "count = 중요하다 (= matter). count toward = ~에 합산되다, 보탬이 되다. 덤: “~하기 위해”는 to + 동사 (for + 동사 ✕)",
+      src: "“every ingredient counts”",
+      ex: ["Every second counts.", "Every order counts if we want to hit our target this quarter."],
+      s: "Every order counts toward our quarterly target.", m: "counts toward", kr: "모든 주문이 분기 목표 달성에 보탬이 된다." },
+
+    { id: "nyt-target", tab: "idiom", type: "숙어", title: "hit / meet / exceed / fall short of the target",
+      meaning: "목표 달성 = hit / meet / reach, 초과 = exceed, 미달 = fall short of. 영업 목표는 goal보다 target. a primary reason (that) = 주된 이유",
+      src: "작문 연습",
+      ex: ["We exceeded our target by 5%.", "We need to meet our sales target this year."],
+      s: "That's the primary reason we fell short of our target this quarter.", m: "fell short of our target", kr: "그게 이번 분기 목표에 못 미친 주된 이유다." },
+
+    { id: "nyt-work-toward", tab: "idiom", type: "숙어", title: "toward / work toward",
+      meaning: "toward = ~ 쪽으로(방향) → ① 목표를 향해 ② ~에 대한(태도) ③ ~ 무렵. work toward, go toward(예산이 ~에 쓰이다). through(~를 통해)와 구분. 점유율은 a 15% market share",
+      src: "“Every order counts toward our quarterly target”",
+      ex: ["This budget will go toward marketing.", "Dealers' attitude toward the price increase is negative."],
+      s: "We are working toward a 15% market share in Southeast Asia.", m: "working toward a 15% market share", kr: "우리는 동남아 점유율 15%를 목표로 노력하고 있다." },
+
+    { id: "nyt-pile-up", tab: "idiom", type: "숙어", title: "tend to / pile up (몰리다)",
+      meaning: "tend to (is tend ✕). 몰리다 = pile up(쌓이다), spike / surge(급증하다), be concentrated(집중되다, 보고서)",
+      src: "작문 연습",
+      ex: ["Orders usually spike toward the end of the quarter.", "Orders tend to be concentrated in winter."],
+      s: "Orders tend to pile up toward the end of the quarter.", m: "tend to pile up", kr: "분기 말 무렵에 주문이 몰리는 경향이 있다." },
+
+    { id: "nyt-name-a-few", tab: "idiom", type: "표현", title: "just to name a few · dealer network",
+      meaning: "몇 가지만 예로 들자면 (예시가 더 많다는 은근한 자신감). 나라 이름 ↔ 형용사: Thailand ↔ Thai, Vietnam ↔ Vietnamese, Malaysia ↔ Malaysian, Indonesia ↔ Indonesian",
+      src: "“Chocolate, olive oil and honey, just to name a few”",
+      ex: ["We supply Toyota, Hyundai and Kia, just to name a few.", "We have a strong dealer network in Thailand."],
+      s: "We have dealers in Thailand, Vietnam and Malaysia, just to name a few.", m: "just to name a few", kr: "몇 곳만 예로 들자면, 우리는 태국, 베트남, 말레이시아에 대리점이 있다." },
+
+    { id: "nyt-market-as", tab: "idiom", type: "숙어", title: "market A as B / market A to B",
+      meaning: "market(동사) = 시장에 내놓고 홍보해서 팔다. market A as B = A를 B로 내세워 팔다, market A to B = A를 B(고객층)에게 팔다. have been marketed = 판매되어 왔다",
+      src: "“have been marketed according to their provenance and quality”",
+      ex: ["We market this tire to SUV owners.", "These products have been marketed to younger buyers."],
+      s: "We market this tire as a premium product.", m: "market this tire as a premium product", kr: "우리는 이 타이어를 프리미엄 제품으로 내세워 판매한다." },
+
+    { id: "nyt-origin", tab: "idiom", type: "단어", title: "provenance / origin / country of origin",
+      meaning: "provenance = 출처, 이력 (격식, 고급 제품), origin = 원산지, country of origin = 원산지 국가 (무역 서류 용어)",
+      src: "“according to their provenance and quality”",
+      ex: ["The provenance of the wine is clearly labeled.", "Please state the country of origin on the invoice."],
+      s: "Customers ask about the country of origin before buying.", m: "country of origin", kr: "고객들은 구매 전에 원산지를 물어본다." },
+
+    { id: "nyt-inside-out", tab: "idiom", type: "숙어", title: "know ~ inside out · connoisseur",
+      meaning: "속속들이 잘 알다. connoisseur [ˌkɑːnəˈsɜːr] = 제대로 아는 감정가(칭찬), snob = 잘난 척하는 사람(비꼼). 가게 사장님 = owner (boss는 상사)",
+      src: "“a world that has been far more encouraging of connoisseurship”",
+      ex: ["He's a real wine connoisseur.", "That tire shop owner is a real tire connoisseur."],
+      s: "That tire shop owner knows tires inside out.", m: "knows tires inside out", kr: "그 타이어 가게 사장님은 타이어를 속속들이 안다." },
+
+    { id: "nyt-encouraging-of", tab: "idiom", type: "숙어", title: "be encouraging of · management",
+      meaning: "~를 장려하는, ~에 우호적인. management = 경영진 (관사 없이, 단수 동사), senior management = 고위 경영진. far more ~ than when ~ = ~했을 때보다 훨씬 더",
+      src: "“far more encouraging of connoisseurship than when boomers were young”",
+      ex: ["I need to get approval from senior management.", "The market is far more competitive than when I started."],
+      s: "Management is very encouraging of new ideas.", m: "is very encouraging of", kr: "경영진은 새로운 아이디어를 적극 장려한다." },
+
+    { id: "nyt-exercise", tab: "idiom", type: "숙어", title: "exercise caution / exercise an option",
+      meaning: "exercise = (권리·힘·판단을) 행사하다, 발휘하다. exercise the option to renew, exercise one's right, exercise judgment. 계약하다 = sign a contract with",
+      src: "“the opportunity to exercise their critical voices”",
+      ex: ["The distributor exercised the option to renew the contract.", "Please exercise your judgment."],
+      s: "Please exercise caution when you sign a contract with a new dealer.", m: "exercise caution", kr: "새 대리점과 계약할 때는 주의하세요." },
+
+    { id: "nyt-better-worse", tab: "idiom", type: "숙어", title: "for better or worse · deciding factor",
+      meaning: "좋든 나쁘든. factor = (결정에 영향을 주는) 요소, option = 선택지. deciding factor = 결정적 요인. 가격이라는 개념 일반은 관사 없이 price",
+      src: "“for better or worse”",
+      ex: ["For better or worse, online reviews now drive tire sales.", "Price is a key factor for most dealers."],
+      s: "For better or worse, price is now the deciding factor for most customers.", m: "For better or worse", kr: "좋든 나쁘든, 이제는 대부분 고객에게 가격이 결정적인 요인이다." },
+
+    { id: "nyt-opportunity", tab: "idiom", type: "표현", title: "give (someone) the opportunity to",
+      meaning: "~에게 ~할 기회를 주다",
+      src: "“Social media has given everybody the opportunity to exercise their critical voices”",
+      ex: ["The trade show gave us the opportunity to meet new distributors.", "Thank you for giving me the opportunity to present."],
+      s: "This partnership gives us the opportunity to enter the Indonesian market.", m: "gives us the opportunity to", kr: "이번 제휴로 인도네시아 시장에 진출할 기회가 생긴다." },
+
+    { id: "nyt-discerning", tab: "idiom", type: "단어", title: "discerning · designed for",
+      meaning: "안목 있는, 잘 가려내는 (칭찬). picky = 까다로운(살짝 부정적). discerning customers는 프리미엄 제품 소개 단골. designed for = 처음부터 ~를 위해 만든",
+      src: "“Millennials are a more discerning generation”",
+      ex: ["Discerning buyers compare specs before choosing.", "Some dealers are very picky about delivery dates."],
+      s: "This product is designed for discerning customers who value performance.", m: "discerning customers", kr: "이 제품은 성능을 중시하는 안목 있는 고객을 위해 만들었다." },
+
+    { id: "nyt-disposable-income", tab: "idiom", type: "숙어", title: "disposable income · drive demand · demand for",
+      meaning: "가처분 소득 (disposal = 폐기 ✕, disposable cups = 일회용 컵). drive demand = 수요를 이끌다. ~에 대한 수요 = demand for (of ✕)",
+      src: "“millennials have less disposable income than their parents”",
+      ex: ["Higher disposable income usually leads to more consumer spending.", "Demand for EV tires is growing fast."],
+      s: "Rising disposable income in Vietnam is driving demand for premium tires.", m: "Rising disposable income", kr: "베트남의 가처분 소득 증가가 프리미엄 타이어 수요를 이끌고 있다." },
+
+    { id: "nyt-weighed-down", tab: "idiom", type: "숙어", title: "be burdened by / be weighed down by",
+      meaning: "~에 짓눌리다 (burden이 동사라 수동태 + by). be hit by, be affected by도 같은 모양. 과잉 재고 = excess inventory. much는 긍정문에 잘 안 씀 (a lot of / too much)",
+      src: "“They are often burdened by student debt”",
+      ex: ["We offered flexible payment terms to ease the burden.", "Our margins were hit by rising costs."],
+      s: "Many dealers are weighed down by excess inventory.", m: "weighed down by excess inventory", kr: "많은 대리점들이 과잉 재고에 짓눌려 있다." },
+
+    { id: "nyt-shipping-costs", tab: "idiom", type: "단어", title: "fare / fee / cost / freight",
+      meaning: "fare = 교통 요금(bus fare), fee = 수수료(handling fee), cost(s) = 비용 일반, freight = 화물 운송(비). a heavy burden = 큰 부담",
+      src: "작문 연습",
+      ex: ["There is a handling fee of $20.", "Freight charges went up again."],
+      s: "Shipping costs are a heavy burden for small dealers.", m: "Shipping costs are a heavy burden", kr: "운송비는 소규모 대리점에게 큰 부담이다." },
+
+    { id: "nyt-gravitate", tab: "idiom", type: "숙어", title: "gravitate toward · A rather than B",
+      meaning: "자연스럽게 ~ 쪽으로 끌리다, 몰리다 (gravity = 중력). shift to = 옮겨 가다. 반복을 피할 땐 ones. 가성비 = value-for-money / budget",
+      src: "“millennials have gravitated to beer and spirits rather than wine”",
+      ex: ["Younger buyers have gravitated to online channels.", "Dealers prefer cash discounts rather than free products."],
+      s: "Customers are gravitating toward affordable tires rather than premium ones.", m: "gravitating toward", kr: "고객들이 프리미엄 타이어보다는 가성비 타이어 쪽으로 몰리고 있다." },
+
+    { id: "nyt-cost-same", tab: "idiom", type: "숙어", title: "cost the same as / more than / less than",
+      meaning: "~와 값이 같다 / 더 비싸다 / 더 싸다. 소유격 뒤에는 one을 붙이지 않음 (competitor's one ✕ → competitor's)",
+      src: "“might cost the same as a glass of mediocre wine”",
+      ex: ["Our premium tire costs about the same as their mid-range tire.", "This model costs less than last year's."],
+      s: "Our new product costs about the same as our competitor's, but it performs better.", m: "costs about the same as", kr: "우리 신제품은 경쟁사 제품과 가격은 비슷하지만 성능은 더 좋다." },
+
+    { id: "nyt-comparable", tab: "idiom", type: "단어", title: "comparable (to) · by comparison",
+      meaning: "comparable [ˈkɑːmpərəbl] = 비슷한 수준의, 비교할 만한 (comparable to ~). 가격 앞 전치사는 at (at a lower price). By comparison, = 그에 비해 (두 문장을 이어 대비)",
+      src: "“By comparison, good wine is more expensive than beer or spirits of comparable quality”",
+      ex: ["SUV tire sales grew 15% this year. By comparison, PCR sales remained flat.", "Our quality is comparable to global brands."],
+      s: "Our product offers comparable quality at a lower price.", m: "comparable quality at a lower price", kr: "우리 제품은 더 낮은 가격에 비슷한 품질을 제공한다." },
+
+    { id: "nyt-benchmark", tab: "idiom", type: "단어", title: "benchmark / benchmark against",
+      meaning: "기준점, 대표작. 동사 = 비교 평가하다 (benchmark A against B)",
+      src: "“benchmark wines are often shockingly expensive”",
+      ex: ["Michelin is the benchmark for premium tires.", "We use their pricing as a benchmark."],
+      s: "We benchmarked our new tire against Bridgestone's.", m: "benchmarked", kr: "우리는 신제품을 브리지스톤 제품과 비교 평가했다." },
+
+    { id: "nyt-basis", tab: "idiom", type: "숙어", title: "on a ~ basis · far less · YoY",
+      meaning: "on a year-on-year / monthly / case-by-case basis = 전년 대비 / 매달 / 건별로. even on an inflation(currency)-adjusted basis = 물가(환율)를 반영하더라도. far less + 형용사 = 훨씬 덜. 비용·가격은 high / low (costs are expensive ✕)",
+      src: "“Premium wine was far less expensive in the mid-90s, even on an inflation-adjusted basis”",
+      ex: ["Raw material costs were far lower five years ago.", "Discounts are approved on a case-by-case basis."],
+      s: "Sales rose by 10% on a year-on-year basis.", m: "on a year-on-year basis", kr: "매출은 전년 대비 10% 늘었다." },
+
+    { id: "nyt-pricing", tab: "idiom", type: "단어", title: "price vs pricing · pricing strategy",
+      meaning: "price = 개별 가격(숫자), pricing = 가격 책정, 가격 체계 전체. competitive / aggressive / tiered pricing. have to(꼭 해야) vs need to(필요하다, 제안 톤). 비교급 겹침 ✕ (much more higher → much higher)",
+      src: "“We review dealer pricing on a monthly basis”",
+      ex: ["The price of this tire is much higher than our competitor's.", "Dealers in Vietnam are very sensitive to pricing."],
+      s: "We need to rethink our pricing strategy in Southeast Asia.", m: "rethink our pricing strategy", kr: "동남아 시장에서는 가격 전략을 다시 생각해 봐야 한다." },
+
+    { id: "nyt-shrink", tab: "idiom", type: "숙어", title: "shrink / have been shrinking · for vs since",
+      meaning: "쪼그라들다 (shrink–shrank–shrunk). decrease / decline(중립), drop / fall, plunge(급락). 기간은 for (for the past two years), 시점은 since (since 2024). the least expensive = 가장 싼",
+      src: "“Sales of the least expensive wines … have been shrinking”",
+      ex: ["Sales of the least expensive tire line are declining.", "We're under pressure from shrinking margins."],
+      s: "Our market share in Thailand has been shrinking for the past two years.", m: "has been shrinking for the past two years", kr: "태국에서 우리 시장점유율이 지난 2년 동안 계속 줄어들고 있다." },
+
+    { id: "nyt-every-effort", tab: "idiom", type: "숙어", title: "make an effort / make every effort to",
+      meaning: "~하려고 노력하다 / 최선을 다하다 (make some effort = 어느 정도 노력하다). “주문품을 선적하다” = ship your order",
+      src: "“began to make some effort to diversify its appeal”",
+      ex: ["We made an effort to improve our response time.", "We will make every effort to meet the deadline."],
+      s: "We will make every effort to ship your order by the end of this week.", m: "make every effort to", kr: "이번 주 안에 주문품을 선적할 수 있도록 최선을 다하겠습니다." },
+
+    { id: "nyt-diversify", tab: "idiom", type: "단어", title: "diversify · or rather",
+      meaning: "다양화하다. or rather = 아니, 더 정확히 말하면 (스스로 정정할 때)",
+      src: "“the wine industry, or rather a small part of it”",
+      ex: ["We need to diversify our product portfolio.", "Sales grew 10%, or rather 9.8%."],
+      s: "We need to diversify our customer base beyond Thailand.", m: "diversify our customer base", kr: "태국 외로 고객 기반을 다양화해야 한다." },
+
+    { id: "nyt-exclusive", tab: "idiom", type: "단어", title: "inclusive / exclusive · exclusive of VAT",
+      meaning: "inclusive = (사람·조직) 포용적인 / (가격) ~를 포함한 (inclusive of tax). exclusive = 독점적인 / ~ 별도. exclusive distributor = 독점 유통사",
+      src: "“a more welcoming, inclusive place”",
+      ex: ["We signed an exclusive distribution agreement for Malaysia.", "The price is inclusive of shipping."],
+      s: "All prices are exclusive of VAT.", m: "exclusive of VAT", kr: "모든 가격은 부가세 별도입니다." },
+
+    { id: "nyt-how-far", tab: "idiom", type: "표현", title: "how far ~ has to go / a long way to go",
+      meaning: "아직 얼마나 갈 길이 먼지 (show / know + how far ~). 말할 때는 We still have a long way to go. 반대: how far we've come (얼마나 발전했는지)",
+      src: "“show how far the industry has to go”",
+      ex: ["We still have a long way to go.", "Look at how far we've come in five years."],
+      s: "The results of this customer survey show how far we still have to go.", m: "how far we still have to go", kr: "이번 고객 설문 결과는 우리가 아직 갈 길이 멀다는 걸 보여준다." },
+
+    { id: "nyt-carbon", tab: "idiom", type: "숙어", title: "carbon footprint · be clear about",
+      meaning: "탄소 발자국 (ESG 단골). be clear about = ~에 대해 분명히(투명하게) 밝히다",
+      src: "“their strategies for lowering their carbon footprints”",
+      ex: ["Please be clear about the delivery schedule in your reply.", "Customers care about a brand's carbon footprint."],
+      s: "We aim to lower our carbon footprint by 30% by 2030.", m: "lower our carbon footprint", kr: "우리는 2030년까지 탄소 발자국을 30% 줄이는 것을 목표로 한다." },
+
+    { id: "nyt-evolve", tab: "idiom", type: "단어", title: "evolve / evolving needs",
+      meaning: "시간을 두고 더 나은 쪽으로 발전하다 (change보다 긍정적). 비교 대상이 없으면 quickly (faster ✕). The reality / problem is that ~ = 핵심을 예고하는 틀",
+      src: "“start talking about wine in an evolved way”",
+      ex: ["Our strategy has evolved over the years.", "The reality is that price matters more than brand in this market."],
+      s: "The needs of Vietnamese customers are evolving quickly.", m: "are evolving quickly", kr: "베트남 고객들의 니즈가 빠르게 변하고 있다." },
+
+    { id: "nyt-reference", tab: "idiom", type: "단어", title: "reference (동사)",
+      meaning: "언급하다, 참조하다 (명사 “참고”만이 아님)",
+      src: "“to reference the many things that are already a part of what we do”",
+      ex: ["The report references last year's data.", "He referenced our meeting in his email."],
+      s: "Please reference the PO number in your reply.", m: "reference the PO number", kr: "회신 시 PO 번호를 기재해 주세요." },
+
+    { id: "nyt-resonate", tab: "idiom", type: "숙어", title: "resonate with / appeal to",
+      meaning: "resonate = 공명하다 → 공감을 얻다, 와닿다 (주어 = 메시지·제품, with 뒤 = 사람). appeal to = 매력적이다, strike a chord with = 심금을 울리다. this + 단수 / these + 복수",
+      src: "“that would resonate with younger consumers”",
+      ex: ["Value-for-money pricing appeals to budget-conscious customers.", "The safety message didn't resonate with dealers."],
+      s: "These commercials are resonating with young Vietnamese drivers.", m: "resonating with", kr: "이 광고들은 베트남 젊은 운전자들에게 반응이 좋다." },
+
+    { id: "nyt-problematic", tab: "idiom", type: "단어", title: "problematic · seem + 형용사",
+      meaning: "문제의 소지가 있는 (problematical은 옛말). problematic for ~. deadline(마감 기한) vs delivery schedule(납기 일정)",
+      src: "“This is where his report seems problematical”",
+      ex: ["This payment term could be problematic for smaller dealers.", "The plan seems risky."],
+      s: "This delivery schedule seems problematic for new dealers.", m: "seems problematic for", kr: "이 납기 일정은 신규 대리점에게 무리가 있어 보인다." },
+
+    { id: "nyt-competitiveness", tab: "idiom", type: "단어", title: "competitiveness · This is where ~",
+      meaning: "competition(경쟁) / competitor(경쟁사) / competitive(경쟁력 있는) / competitiveness(경쟁력) / competitive edge(경쟁 우위). This is where ~ = 바로 이 지점에서 (핵심 문제 짚기)",
+      src: "“This is where his report seems problematical”",
+      ex: ["This is where our prices lose their competitive edge.", "Competition in Vietnam is getting fiercer."],
+      s: "This is where we lose our price competitiveness.", m: "price competitiveness", kr: "바로 이 부분에서 우리 가격이 경쟁력을 잃는다." },
+
+    { id: "nyt-by-no-means", tab: "idiom", type: "표현", title: "by no means / By all means",
+      meaning: "by no means = 결코 ~이 아닌 (강한 부정, 격식). By all means. = 물론이죠 (흔쾌한 허락). 계약 성사 여부는 deal (contract는 계약서). May I ~? = 정중한 허락 요청",
+      src: "“is by no means united”",
+      ex: ["A: May I share this file with the dealers? B: By all means. Go ahead.", "This by no means guarantees success."],
+      s: "This deal is by no means certain yet.", m: "by no means certain", kr: "이번 계약은 아직 결코 확정된 게 아니다." },
+
+    { id: "nyt-good-cause", tab: "idiom", type: "단어", title: "cause (대의) / good cause",
+      meaning: "cause = 원인 / 대의, (사회적) 운동. good cause = 좋은 일. be united in -ing = ~하는 데 한마음이다",
+      src: "“supporting social-justice causes”",
+      ex: ["The team is united in supporting the new strategy.", "What was the cause of the delay?"],
+      s: "Part of the proceeds will go to a good cause.", m: "go to a good cause", kr: "수익의 일부는 좋은 일에 쓰입니다." },
+
+    { id: "nyt-combat", tab: "idiom", type: "단어", title: "combat · -wide · across",
+      meaning: "combat = 큰 문제에 맞서 싸우다 (address < tackle < combat, solve = 완전 해결). 목적어를 바로 받음 (combat to ✕). industrywide / companywide / nationwide, across Thailand = 태국 전역에",
+      src: "“no industrywide plan for combating climate change”",
+      ex: ["We have dealers across Thailand.", "We launched a companywide cost-cutting program."],
+      s: "We are working to combat counterfeit tires in Southeast Asia.", m: "combat counterfeit tires", kr: "우리는 동남아에서 위조 타이어에 대응하기 위해 노력하고 있다." },
+
+    { id: "nyt-tooth-nail", tab: "idiom", type: "숙어", title: "fight tooth and nail · win a contract",
+      meaning: "사력을 다해 싸우다 (이빨과 손톱까지 동원). 계약을 따내다 = win / secure / land a contract. 확정하다 = finalize (final은 형용사)",
+      src: "“I had to fight tooth and nail to keep my job”",
+      ex: ["We need to finalize the contract by Friday.", "The dealer fought tooth and nail over the discount rate."],
+      s: "We fought tooth and nail to win the exclusive contract.", m: "fought tooth and nail", kr: "우리는 그 독점 계약을 따내려고 사력을 다했다." },
+
+    { id: "nyt-enforce", tab: "idiom", type: "숙어", title: "enforce · payment terms · by / until / from",
+      meaning: "enforce = 강제로 시행하다. redundancies(영) = layoffs(미) 정리해고, redundant = 중복된. by = 늦어도 ~까지(마감), until = ~까지 계속, from / starting = ~부터",
+      src: "“my company tried to enforce redundancies”",
+      ex: ["Please reply by Friday.", "The promotion runs until Friday."],
+      s: "The new payment terms will be strictly enforced starting next month.", m: "strictly enforced starting next month", kr: "새 결제 조건은 다음 달부터 엄격하게 적용된다." },
+
+    { id: "nyt-differing", tab: "idiom", type: "단어", title: "differing views",
+      meaning: "서로 엇갈리는 (different보다 의견 차이를 강조). 덤: as는 because(이유) 뜻도 있음",
+      src: "“producers with wildly differing points of view”",
+      ex: ["There are differing opinions on the new policy.", "We postponed the launch as the parts arrived late."],
+      s: "Our dealers have differing views on the new pricing policy.", m: "differing views on", kr: "대리점들은 새 가격 정책에 대해 의견이 엇갈린다." },
+
+    { id: "nyt-strikes-me", tab: "idiom", type: "표현", title: "it strikes me that / strike A as B",
+      meaning: "문득 ~라는 생각이 든다 (I think보다 조심스러운 관찰). What strikes me is ~ = 제 눈에 띄는 건. strike A as B = A에게 B라는 인상을 주다. aggressive pricing = 공격적인 가격 정책",
+      src: "“it strikes me that actual change in the industry would go a lot further”",
+      ex: ["What strikes me is how fast Chinese brands are growing.", "The proposal strikes me as a bit risky."],
+      s: "Our competitors' pricing strikes me as a bit aggressive.", m: "strikes me as", kr: "경쟁사 가격 정책은 좀 공격적이라는 인상을 받았다." },
+
+    { id: "nyt-go-far", tab: "idiom", type: "숙어", title: "go a lot further than / go a long way",
+      meaning: "~보다 훨씬 효과가 있다 / 큰 효과가 있다 (go far = 멀리 가다 → 효과가 크다)",
+      src: "“would go a lot further in appealing to young people”",
+      ex: ["A small gift goes a long way with dealers.", "A quick reply goes a long way."],
+      s: "Better service would go a lot further than another discount.", m: "go a lot further than", kr: "할인을 한 번 더 해 주는 것보다 서비스를 개선하는 게 훨씬 효과적일 것이다." },
+
+    { id: "nyt-thorny", tab: "idiom", type: "숙어", title: "a thorny issue · divisive",
+      meaning: "thorny = 가시 돋친 → 까다롭고 민감한. divisive = 의견이 갈리는, 분열을 일으키는. attack an issue = 정면으로 덤비다. as a whole = 전체로서",
+      src: "“attacking complicated, thorny issues with solutions that are just as divisive”",
+      ex: ["The new commission structure has been divisive among the sales team.", "The market as a whole grew 5%."],
+      s: "Payment terms are always a thorny issue with dealers.", m: "a thorny issue", kr: "결제 조건은 대리점들과 늘 민감한 문제다." },
+
+    { id: "nyt-experience", tab: "idiom", type: "표현", title: "In my experience · be drawn to",
+      meaning: "겸손하게 말의 범위 정하기 (원문: In my little corner of the wine world). From where I sit, / At least in my market,. be drawn to = ~에 끌리다. care about / value A more than B",
+      src: "“In my little corner of the wine world, I see younger people drawn to natural wines”",
+      ex: ["Young drivers are increasingly drawn to SUV tires.", "At least in my market, dealers care more about lead time than price."],
+      s: "In my experience, Southeast Asian dealers value relationships more than price.", m: "In my experience", kr: "제 경험으로는, 동남아 대리점들은 가격보다 관계를 더 중요하게 여긴다." },
+
+    { id: "nyt-stick-with", tab: "idiom", type: "숙어", title: "stick with vs stick to · concern",
+      meaning: "stick with = 바꾸지 않고 고수하다 (사람·제품·선택), stick to = 계획·규칙을 지키다. concern = 걱정(about) / 관심·배려(for). even if(만약 ~해도, 가정) vs even though(실제로 ~했는데도)",
+      src: "“sticking with traditional ingredients and processes”",
+      ex: ["Please let me know if you have any questions or concerns.", "Let's stick to the plan."],
+      s: "Even though prices have risen, our dealers have stuck with our brand.", m: "have stuck with", kr: "가격이 올랐는데도 대리점들은 우리 브랜드를 계속 쓰고 있다." },
+
+    { id: "nyt-perception", tab: "idiom", type: "단어", title: "perception / demonstrate",
+      meaning: "perception = 사람들이 보는 이미지, 인식 (실제와 다를 수 있음 ↔ in reality). demonstrate = 말이 아니라 행동·증거로 보여주다. commitment to + -ing (to가 전치사)",
+      src: "“It's not just a question of perception … of demonstrating a commitment to change”",
+      ex: ["We need to demonstrate our commitment to the Vietnamese market.", "Customer perception of Korean tires has improved a lot."],
+      s: "There's a perception that our brand is expensive.", m: "There's a perception that", kr: "우리 브랜드가 비싸다는 인식이 있다." },
+
+    { id: "nyt-paper-over", tab: "idiom", type: "숙어", title: "paper over / gloss over",
+      meaning: "금 간 벽을 벽지로 덮듯 근본 해결 없이 겉만 덮다 (paper over the cracks). 덮는 도구는 with 또는 주어로. gloss over = 얼버무리다, cover up = 은폐하다. a failure to + 동사 = ~하지 못한 것",
+      src: "“Slogans will not paper over a failure to do that”",
+      ex: ["The report glossed over the inventory problem.", "Failure to pay on time may result in penalties."],
+      s: "A promotion won't paper over our delivery problems.", m: "paper over", kr: "프로모션으로 납기 문제를 덮을 수는 없다." },
+
+    // ---- 문법 ----
+    { id: "gr-coupled-with", tab: "grammar", type: "문법", title: "A, coupled with B, + 동사는 A에 맞추기",
+      meaning: "<b>coupled with</b>는 “~와 맞물려, ~에 더해”. and와 달리 주어를 복수로 만들지 않아서 <b>동사는 앞 주어(A)에 맞춰요</b>. along with, together with, as well as도 같은 규칙이에요. 콤마 사이 삽입은 빼고 읽으면 뼈대가 보여요.",
+      src: "Newspresso Generational: “the falling interest in wine …, coupled with the encroaching retirement …, poses a primary threat”",
+      ex: ["The falling interest …, coupled with …, poses a threat. (interest → poses)", "Our sales, along with our profit, have grown."],
+      s: "A weaker yen, coupled with rising shipping costs, has squeezed our margins.", m: "coupled with rising shipping costs, has", kr: "[상황] 엔화 약세에 운송비 상승까지 겹쳐 마진이 줄었다고 말해보세요 (동사는 앞 주어에 맞추기)" },
+
+    { id: "gr-have-yet-to", tab: "grammar", type: "문법", title: "have yet to + 동사 = 아직 ~하지 않았다",
+      meaning: "not이 없어도 <b>부정 뜻</b>이에요. hasn't ~ yet보다 격식 있고 “됐어야 하는데 아직”이라는 지적 뉘앙스가 있어요. be yet to도 같은 뜻. 대금·회신을 정중하게 재촉할 때 좋아요.",
+      src: "Newspresso Generational: “That issue has yet to be addressed or solved”",
+      ex: ["The quality claim has yet to be addressed.", "The final price is yet to be confirmed."],
+      s: "We have yet to receive payment for the September shipment.", m: "have yet to receive", kr: "[상황] 9월 선적분 대금을 아직 못 받았다고 정중하게 말해보세요 (not 없이)" },
+
+    { id: "gr-not-clear-when", tab: "grammar", type: "문법", title: "It's not clear + 의문사 + 주어 + 동사",
+      meaning: "It은 가주어, 의문사절이 진짜 주어예요. 한국어의 끝(“확실하지 않다”)부터 말하고 <b>what / when / whether / how</b>를 붙여요. exactly = 단정 피하기, not yet clear = 아직 판단하기 이르다. or not과 짝이면 whether.",
+      src: "Newspresso Generational: “It's not exactly clear what the industry can do to change this dynamic”",
+      ex: ["It's not clear what the customer wants.", "It's not clear how we can cut costs further."],
+      s: "It's not exactly clear when the dealer will place their next order.", m: "It's not exactly clear when", kr: "[상황] 대리점이 언제 다음 주문을 넣을지 확실하지 않다고 말해보세요" },
+
+    { id: "gr-not-clear-whether", tab: null, type: "문법", title: "It's not yet clear whether ~",
+      meaning: "whether = ~인지 아닌지 (or not과 짝이면 if보다 whether). not yet clear = 아직 판단하기 이르다는 보고 톤. 성과는 be effective가 보고서 톤.",
+      src: "",
+      ex: ["It's not clear whether they'll renew the contract.", "It's not exactly clear if this promotion will work. (말할 때)"],
+      s: "It's not yet clear whether this promotion will be effective.", m: "not yet clear whether", kr: "[상황] 이 프로모션이 효과가 있을지 아직 확실하지 않다고 보고해보세요" },
+
+    { id: "gr-seem-as-if", tab: "grammar", type: "문법", title: "It may seem as if ~, but ~",
+      meaning: "“~인 것처럼 보일 수도 있지만”. 끝(“~처럼 보인다”)부터 말하고 평소 문장을 이어 붙여요. 상대 의견을 인정하고 반박할 때 좋아요. 말할 땐 It seems like. <b>조동사 뒤는 동사원형</b> (may seems ✕).",
+      src: "Newspresso Generational: “it may seem as if Generation X … has been overlooked”",
+      ex: ["It seems as if dealers aren't very interested in our new product.", "It may seem as if the price increase hurt sales, but the real cause was the warm winter."],
+      s: "It may seem as if our competitors have cut their prices, but it was actually just a temporary promotion.", m: "It may seem as if", kr: "[상황] 경쟁사가 가격을 내린 것처럼 보일 수 있지만 사실은 일시적인 프로모션이었다고 말해보세요" },
+
+    { id: "gr-too-little", tab: "grammar", type: "문법", title: "too few / too little + 명사 + to 동사",
+      meaning: "few + 셀 수 있는 명사, little + 셀 수 없는 명사(data, time, budget). too + <b>형용사</b> → It's, too few / little + <b>명사</b> → There's / We have. 말할 땐 not enough도 흔해요.",
+      src: "Newspresso Generational: “Generation Z … has too few years of legal drinking to really figure into the data”",
+      ex: ["We have too few dealers in Vietnam to compete with local brands.", "We don't have enough time to launch a new product this quarter."],
+      s: "There's too little data to draw a conclusion.", m: "There's too little data to", kr: "[상황] 결론을 내리기엔 데이터가 너무 적다고 말해보세요" },
+
+    { id: "gr-participle", tab: "grammar", type: "문법", title: "삽입 분사: 명사, p.p. ~, (= which was ~)",
+      meaning: "콤마 뒤에 주어 없이 p.p.가 나오면 <b>동사가 아니라 앞 명사를 설명</b>하는 거예요 (who / which was 생략). 사람·회사 소개에 쓰면 문장이 깔끔해져요.",
+      src: "Newspresso Generational: “Generation Z, born after 1995” / “spirits and cocktails …, bought more for their alcoholic punch”",
+      ex: ["Generation Z, born after 1995, …", "The report, published last month, shows strong demand."],
+      s: "Our new distributor, founded in 2010, covers all of Malaysia.", m: "founded in 2010", kr: "[상황] 2010년에 설립된 새 유통사가 말레이시아 전역을 담당한다고 소개해보세요 (설립 연도를 콤마 사이에)" },
+
+    { id: "gr-with-ing", tab: "grammar", type: "문법", title: "with + 명사 + -ing (덧붙임 상황)",
+      meaning: "“~가 ~한 채로, ~하면서”. 앞 문장에 배경 설명을 덧붙여요. 실적 보고에서 무엇이 성장을 이끌었는지 말할 때 좋아요.",
+      src: "Newspresso Generational: “with the other options trailing in the distance”",
+      ex: ["Wine and beer led, with the other options trailing in the distance.", "Demand grew, with online sales accounting for 30%."],
+      s: "Sales rose 10%, with SUV tires leading the growth.", m: "with SUV tires leading", kr: "[상황] 매출이 10% 늘었고 SUV 타이어가 성장을 이끌었다고 한 문장으로 말해보세요" },
+
+    { id: "gr-as-whereas", tab: "grammar", type: "문법", title: "as(~하면서) vs while / whereas(~인 반면)",
+      meaning: "<b>as</b>는 동시 진행·흐름이에요(대비 뜻은 없음). as 뒤에 원인, 주절에 결과. “반면에”는 <b>while / whereas</b>(격식). 두 문장을 이을 땐 By comparison,.",
+      src: "Newspresso Generational: “declined as sales of spirits rose”",
+      ex: ["Winter tire sales fell as temperatures stayed mild.", "Wine sales declined, while spirits sales rose."],
+      s: "Sales grew in Vietnam, whereas Thailand remained flat.", m: "whereas", kr: "[상황] 베트남 매출은 늘어난 반면 태국은 그대로였다고 비교해보세요" },
+
+    { id: "gr-increase", tab: "grammar", type: "문법", title: "increase in / of / by · Last quarter saw ~",
+      meaning: "무엇이 늘었는지 = increase <b>in</b>, 얼마나 = increase <b>of</b> 10%. 동사로 쓰면 increased <b>by</b> 15%. last / this / next 앞엔 전치사를 안 써요. Last quarter saw ~ = 지난 분기에 ~가 있었다(보고서 톤).",
+      src: "Newspresso Generational: “The increase in competition is a real thing”",
+      ex: ["Winter tire sales increased by 15% last quarter.", "There was an increase of 15% in winter tire sales."],
+      s: "Last quarter saw a 15% increase in winter tire sales.", m: "saw a 15% increase in", kr: "[상황] 지난 분기 겨울 타이어 매출이 15% 증가했다고 보고서 톤으로 말해보세요" },
+
+    { id: "gr-verb-check", tab: "grammar", type: "문법", title: "동사 체크: be동사 + 동사 ✕ · 3인칭 -s · do + 동사원형",
+      meaning: "appeal, tend, pack, cost처럼 <b>이미 동사인 단어 앞엔 be동사를 붙이지 않아요</b>. 단수 주어면 -s (offers, seems, strikes). doesn't / didn't 뒤는 동사원형. to + 동사(to rise) vs to be + 형용사(to be bland).",
+      src: "작문 연습에서 반복된 실수: may seems, are pack, is tend, is went up, are fall short, are appeal",
+      ex: ["This tire costs $120. (is cost ✕)", "Sales are likely to recover. (to be recover ✕)"],
+      s: "Our premium line appeals to discerning customers.", m: "appeals to", kr: "[상황] 우리 프리미엄 라인이 안목 있는 고객들에게 매력적이라고 말해보세요 (be동사 없이)" },
+
+    { id: "gr-in-which", tab: "grammar", type: "문법", title: "in which = where (그 안에서는)",
+      meaning: "in which는 앞 명사를 받아 “그 안에서는 ~하다”로 설명을 붙여요. 말할 땐 where. 가격이라는 개념 일반은 관사 없이 price.",
+      src: "Newspresso Generational: “an esteemed craft in which every ingredient counts”",
+      ex: ["It's a market where price matters most.", "a craft in which every ingredient counts"],
+      s: "Indonesia is a market in which price counts the most.", m: "in which price counts the most", kr: "[상황] 인도네시아는 가격이 가장 중요한 시장이라고 격식 있게 말해보세요" },
+
+    { id: "gr-than-they-were", tab: "grammar", type: "문법", title: "비교: than they used to be / than it was",
+      meaning: "시점끼리 비교할 땐 than 뒤에 <b>앞 주어를 받는 대명사 + 동사</b>(they were, it was). “예전보다” = than they used to be.",
+      src: "Newspresso Generational: “Millennials are a more discerning generation … than baby boomers were”",
+      ex: ["The market is far more competitive than it was 10 years ago.", "Millennials are more discerning than baby boomers were."],
+      s: "Customers these days are far more discerning than they used to be.", m: "than they used to be", kr: "[상황] 요즘 고객들이 예전보다 훨씬 더 안목이 높다고 말해보세요" },
+
+    { id: "gr-so-does", tab: "grammar", type: "문법", title: "As A rises, so does B",
+      meaning: "so does B = “B도 마찬가지다”. 두 가지가 함께 오를 때 세련되게 연결해요. 지금 진행 중인 흐름이면 현재형으로 맞춰요.",
+      src: "Newspresso Generational: 가처분 소득과 소비 이야기",
+      ex: ["As disposable income rises, demand for SUV tires is also increasing.", "As the market grows, so does competition."],
+      s: "As disposable income in Indonesia rises, so does demand for SUV tires.", m: "so does demand for", kr: "[상황] 인도네시아 가처분 소득이 늘면서 SUV 타이어 수요도 함께 늘고 있다고 세련되게 말해보세요" },
+
+    { id: "gr-too-vs-comparative", tab: "grammar", type: "문법", title: "too vs 비교급 · The problem is that ~",
+      meaning: "<b>too</b> + 형용사 = 너무 ~하다(비교 없음), 형용사-<b>er than</b> = ~보다 더. too ~ than ✕. -er과 more는 하나만 (much more higher ✕). 비교 대상이 “경쟁사의 리드타임”이면 competitors'. The problem / reality is that ~ = 핵심 예고.",
+      src: "작문 연습",
+      ex: ["Our lead time is too long.", "The price of this tire is much higher than our competitor's."],
+      s: "The problem is that our lead time is longer than our competitors'.", m: "longer than our competitors'", kr: "[상황] 문제는 우리 리드타임이 경쟁사보다 길다는 거라고 말해보세요" },
+
+    { id: "gr-that-followed", tab: "grammar", type: "문법", title: "the + 명사 + that followed (그 뒤에 이어진 ~)",
+      meaning: "follow = 뒤따르다. 사건과 그 결과를 한 덩어리로 묶어요. After ~를 문장 앞에 두면 배경 → 결과 순서. strength → <b>strengthen</b>처럼 -en은 “~하게 만들다” 동사.",
+      src: "Newspresso Generational: “After the murder of George Floyd in May 2020 and the racial reckoning that followed”",
+      ex: ["After the price increase and the drop in orders that followed, we revised our forecast.", "The flood caused the shipping delays that followed."],
+      s: "After the customer claims and the recall that followed, we strengthened our quality control.", m: "the recall that followed", kr: "[상황] 고객 클레임과 그 뒤에 이어진 리콜 이후 품질 관리를 강화했다고 말해보세요" },
+
+    { id: "gr-suggest-that", tab: "grammar", type: "문법", title: "suggest / recommend that + 주어 + 동사원형",
+      meaning: "제안·권고·요구의 that절은 (should가 생략돼) <b>동사원형</b>이에요. 그래서 are가 아니라 be, lists가 아니라 list. that 뒤 주어는 꼭 넣어요.",
+      src: "Newspresso Generational: “he suggests that producers list their ingredients … and that they be clear about their social values”",
+      ex: ["We recommend that the dealer place the order by Friday.", "I suggest that we review the pricing before the meeting."],
+      s: "I suggest that we check our inventory before the promotion.", m: "suggest that we check", kr: "[상황] 프로모션 전에 재고를 확인하자고 회의에서 제안해보세요" },
+
+    { id: "gr-likely", tab: "grammar", type: "문법", title: "be likely / unlikely to + 동사",
+      meaning: "근거 있는 예측이에요 (will보다 신중). to 뒤가 형용사면 to be bland, 동사면 to rise. It's likely that + 문장도 가능.",
+      src: "Newspresso Generational: “These sorts of slogans are likely to be bland and inoffensive”",
+      ex: ["That dealer is unlikely to accept the new payment terms.", "It's likely that demand will recover in spring."],
+      s: "Raw material costs are likely to rise next quarter.", m: "are likely to rise", kr: "[상황] 다음 분기에 원자재 가격이 오를 가능성이 높다고 보고해보세요" },
+
+    { id: "gr-rhetorical", tab: "grammar", type: "문법", title: "수사 의문문: What will ~ achieve?",
+      meaning: "답을 기대하지 않는 질문으로 “소용없다”를 더 강하게 주장해요. 회의에서 부드럽게 반대할 때 좋아요. What's the point of -ing if ~? 도 같은 용도. doesn't 뒤는 동사원형.",
+      src: "Newspresso Generational: “what will an anodyne marketing campaign achieve?”",
+      ex: ["What's the point of cutting prices if we can't deliver on time?", "If dealers can't get stock, what will another promotion achieve?"],
+      s: "If our product quality doesn't improve, what will more advertising achieve?", m: "what will more advertising achieve", kr: "[상황] 품질이 개선되지 않으면 광고를 늘린다고 뭐가 달라지겠냐고 반문해보세요" },
+
+    { id: "gr-just-as", tab: "grammar", type: "문법", title: "just as + 형용사 + in X as (it is) in Y",
+      meaning: "just as는 <b>형용사 바로 앞</b>에 붙어요. 장소 양쪽에 in. 납기는 lead time (deadline은 마감 기한).",
+      src: "Newspresso Generational: “solutions that are just as divisive in the wine industry as they are in the country as a whole”",
+      ex: ["Price is just as important in Vietnam as it is in Thailand.", "as apparent in natural wine as anywhere else"],
+      s: "Lead time is just as important in Indonesia as it is in Vietnam.", m: "just as important in Indonesia as", kr: "[상황] 인도네시아에서도 베트남과 똑같이 납기가 중요하다고 말해보세요" },
+
+    { id: "gr-question-matter", tab: "grammar", type: "문법", title: "It's not just a question of A; it's a matter of B",
+      meaning: "“단순히 A의 문제가 아니라 B의 문제다”라고 논점을 바꿀 때 써요. a question / a matter 관사 필수. 글에서는 세미콜론(;)으로 연결.",
+      src: "Newspresso Generational: “It's not just a question of perception, it's a matter of action”",
+      ex: ["It's not just a question of price; it's a matter of trust.", "a commitment to improving quality (to + -ing)"],
+      s: "It's not just a question of price; it's a matter of service.", m: "It's not just a question of price; it's a matter of", kr: "[상황] 이건 단순히 가격 문제가 아니라 서비스의 문제라고 말해보세요" },
+
+    { id: "gr-focus-more", tab: "grammar", type: "문법", title: "focus more on A than on B · existing vs new",
+      meaning: "than을 쓰려면 <b>more</b>가 필요해요. 기존 = existing, 신규 = new, 반복은 ones. It strikes me that ~ 으로 시작하면 조심스러운 의견이 돼요.",
+      src: "작문 연습",
+      ex: ["It strikes me that we're focusing too much on price.", "We should spend more on existing customers than on new ones."],
+      s: "It strikes me that we need to focus more on existing dealers than on new ones.", m: "focus more on existing dealers than on new ones", kr: "[상황] 신규 대리점보다 기존 대리점에 더 집중해야 한다는 생각이 든다고 말해보세요" },
+  ];
+
+  // 기존(정적) 카드 번호 → 퀴즈 id (졸업 배지용)
+  const STATIC_CARD_MAP = {
+    '#01': 'cross-paths', '#02': 'gentle-with', '#03': 'filthy', '#04': 'divine', '#05': 'be-after',
+    '#06': 'covet', '#07': 'i-would-never', '#08': 'dont-get-to', '#09': 'burn-to-ash', '#10': 'be-worth',
+    '#11': 'bear-heir', '#12': 'hold-event', '#13': 'get-going', '#14': 'wishful-thinking', '#15': 'carry-trait',
+    '#16': 'what-wouldnt-give', '#17': 'scheming', '#18': 'supposed-to', '#19': 'as-good-as', '#20': 'give-away',
+    '#21': 'get-over-yourself', '#22': 'scoop', '#23': 'make-out', '#24': 'any-length', '#25': 'seduce',
+    '#26': 'get-on-top-of', '#27': 'fair-fairest', '#28': 'peasant', '#29': 'despise', '#30': 'offend',
+    '#31': 'top-of-hour', '#32': 'nyt-consumerism', '#33': 'nyt-turn-of-century',
+    'Q2': 'gr-gentle-with', 'Q3': 'gr-progressive', 'Q4': 'gr-imperative', 'Q5': 'gr-stranding',
+    'Q6': 'gr-have-to-go', 'Q7': 'gr-ellipsis', 'Q8': 'gr-have-as', 'Q9': 'gr-catch-ing', 'Q10': 'gr-let-base',
+    'Q11': 'gr-cataphora'
+  };
+
+  (function renderEntries() {
+    const idiomPanel = document.getElementById('panel-idiom');
+    const grammarPanel = document.getElementById('panel-grammar');
+    let exprNo = 34, qaNo = 12;
+    NYT_ENTRIES.forEach(e => {
+      if (e.tab === 'idiom') {
+        const div = document.createElement('div');
+        div.className = 'expr-card';
+        div.dataset.quiz = e.id;
+        div.innerHTML = `
+          <div class="q-num">NYT · #${String(exprNo++).padStart(2, '0')}</div>
+          <div class="expr-en">${escapeHtmlQ(e.title)}</div>
+          <div class="expr-meaning">${escapeHtmlQ(e.meaning)}</div>
+          <div class="expr-source news">Newspresso · Generational · ${escapeHtmlQ(e.src)}</div>
+          <div class="expr-attempts">
+            <div class="label">비즈니스 예문</div>
+            ${e.ex.map(x => `<div class="attempt-line">${escapeHtmlQ(x)}</div>`).join('')}
+          </div>`;
+        idiomPanel.appendChild(div);
+      } else if (e.tab === 'grammar') {
+        const div = document.createElement('div');
+        div.className = 'qa-card';
+        div.dataset.quiz = e.id;
+        div.innerHTML = `
+          <div class="q-num">Q${qaNo++}</div>
+          <div class="q-title">${escapeHtmlQ(e.title)}</div>
+          <div class="q-context">${escapeHtmlQ(e.src)}</div>
+          <div class="q-answer">${e.meaning}</div>
+          <div class="q-examples">${e.ex.map(x => `<div class="ok">✓ ${escapeHtmlQ(x)}</div>`).join('')}</div>`;
+        grammarPanel.appendChild(div);
+      }
+      QUIZ_BANK.push({
+        id: e.id, type: e.type, sentence: e.s, mask: e.m, kr: e.kr,
+        title: e.title, explain: e.meaning, examples: e.ex
+      });
+    });
+    // 탭 개수 표시 갱신
+    document.querySelector('.tab-btn[data-tab="idiom"] .n').textContent = idiomPanel.querySelectorAll('.expr-card').length + '개';
+    document.querySelector('.tab-btn[data-tab="grammar"] .n').textContent = grammarPanel.querySelectorAll('.qa-card').length + '개';
+  })();
+
+  // 졸업한 항목 카드에 🎓 배지 표시
+  function applyBadges() {
+    document.querySelectorAll('.expr-card, .qa-card').forEach(card => {
+      let id = card.dataset.quiz;
+      const numEl = card.querySelector('.q-num');
+      if (!id && numEl) {
+        const m = numEl.textContent.match(/#\d+|Q\d+/);
+        id = m ? STATIC_CARD_MAP[m[0]] : null;
+      }
+      const old = card.querySelector('.grad-badge');
+      if (old) old.remove();
+      if (id && srsState[id] && srsState[id].graduated && numEl) {
+        const b = document.createElement('span');
+        b.className = 'grad-badge';
+        b.textContent = '🎓 졸업';
+        numEl.appendChild(b);
+      }
+    });
+  }
+
+  // 출석: 하루 ATT_GOAL문제 확정 시 완료 (그날 문제가 더 적으면 전부 풀었을 때)
+  async function countAttendance() {
+    const today = todayStr();
+    const entry = attendance.dates[today] || { completed: false, count: 0, startedAt: new Date().toISOString() };
+    entry.count = (entry.count || 0) + 1;
+    if (!entry.completed && (entry.count >= ATT_GOAL || getDueItems().length === 0)) {
+      entry.completed = true;
+      entry.completedAt = new Date().toISOString();
+    }
+    attendance.dates[today] = entry;
+    await saveAttendance();
+    renderStreak();
+  }
+
+  function renderProgress() {
+    const el = document.getElementById('quiz-progress');
+    if (!el) return;
+    const entry = attendance.dates[todayStr()] || {};
+    const count = entry.count || 0;
+    const attLabel = entry.completed ? '출석 완료 ✓' : `오늘 ${count} / ${ATT_GOAL}`;
+    const shown = Math.min(quizIndex + 1, quizOrder.length);
+    el.innerHTML = `<span>복습 ${shown} / ${quizOrder.length}</span><span style="color:var(--sub)">${attLabel}</span><span>점수 ${quizScore}</span>`;
+  }
+
 
   function shuffle(arr) {
     const a = [...arr];
@@ -1449,7 +2197,9 @@
 
   // ---- Spaced repetition (Leitner system) ----
   const SRS_KEY = 'dialogue-notebook:srs-state';
-  const BOX_INTERVAL_DAYS = { 1: 1, 2: 2, 3: 4, 4: 7, 5: 15 };
+  const BOX_INTERVAL_DAYS = { 1: 1, 2: 2, 3: 4, 4: 7, 5: 15, 6: 30 };
+  const MAX_BOX = 6;          // 6칸(30일)에서 맞히면 졸업
+  const ATT_GOAL = 20;        // 하루 20문제 확정 시 출석 완료
   let srsState = {};
   let storageOk = true;
 
@@ -1529,6 +2279,7 @@
     return QUIZ_BANK.filter(item => {
       const s = srsState[item.id];
       if (!s) return true;
+      if (s.graduated) return false;
       return s.nextReview <= today;
     });
   }
@@ -1557,7 +2308,7 @@
   async function markAttendanceStarted() {
     const today = todayStr();
     if (!attendance.dates[today]) {
-      attendance.dates[today] = { completed: false, startedAt: new Date().toISOString() };
+      attendance.dates[today] = { completed: false, count: 0, startedAt: new Date().toISOString() };
       await saveAttendance();
       renderStreak();
     }
@@ -1670,7 +2421,7 @@
           <div class="modal-title">🔥 출석 기록</div>
           <button class="modal-close" id="modal-close-btn">✕</button>
         </div>
-        <div class="modal-sub">그날의 복습 문제를 전부 풀어야 완료로 기록돼요</div>
+        <div class="modal-sub">하루 20문제를 풀면 완료로 기록돼요 (그날 문제가 20개보다 적으면 전부 풀었을 때)</div>
         <div id="cal-container"></div>
 
         <div class="backup-section">
@@ -1725,6 +2476,7 @@
         await saveAttendance();
         renderStreak();
         renderCalendar(document.getElementById('cal-container'));
+        applyBadges();
         startQuiz();
         statusEl.className = 'backup-status ok';
         const dayCount = Object.keys(attendance.dates || {}).length;
@@ -1811,7 +2563,7 @@
           <button class="modal-close" id="explain-close-btn">✕</button>
         </div>
         <div class="explain-title">${escapeHtmlQ(item.title || item.mask)}</div>
-        <div class="explain-body">${escapeHtmlQ(item.explain || '')}</div>
+        <div class="explain-body">${escapeHtmlQ(item.explain || '').replace(/&lt;(\/?)b&gt;/g, '<$1b>')}</div>
         ${examplesHtml ? `<div class="explain-ex-label">예문</div>${examplesHtml}` : ''}
       </div>`;
     document.body.appendChild(overlay);
@@ -1841,12 +2593,12 @@
     if (quizOrder.length === 0) {
       progressEl.textContent = '';
       const total = QUIZ_BANK.length;
-      const mastered = QUIZ_BANK.filter(i => getItemBox(i.id) >= 5).length;
+      const mastered = QUIZ_BANK.filter(i => srsState[i.id] && srsState[i.id].graduated).length;
       bodyEl.innerHTML = `
         <div class="quiz-card quiz-done">
           <div class="score">✓</div>
           <div style="color:var(--ink-dim);font-size:13px;">오늘 복습할 표현이 없어요!<br>내일 다시 확인하러 와주세요.</div>
-          <div style="margin-top:14px;font-family:var(--mono);font-size:11px;color:var(--sub-dim);">전체 ${total}개 · 마스터 ${mastered}개</div>
+          <div style="margin-top:14px;font-family:var(--mono);font-size:11px;color:var(--sub-dim);">전체 ${total}개 · 🎓 졸업 ${mastered}개</div>
         </div>`;
       return;
     }
@@ -1858,11 +2610,10 @@
           <div class="score">${quizScore} / ${quizOrder.length}</div>
           <div style="color:var(--ink-dim);font-size:13px;">오늘의 복습 완료! 내일 또 만나요.</div>
         </div>`;
-      markAttendanceCompleted();
       return;
     }
 
-    progressEl.innerHTML = `<span>복습 ${quizIndex + 1} / ${quizOrder.length}</span><span>점수 ${quizScore}</span>`;
+    renderProgress();
 
     const item = quizOrder[quizIndex];
     const box = getItemBox(item.id);
@@ -1948,28 +2699,37 @@
 
     // update Leitner box
     const prev = srsState[item.id] || { box: 0, history: [] };
+    const prevBox = prev.box || 0;
     let newBox;
+    let graduated = false;
     if (isCorrect) {
-      // 새 표현(0단계)을 첫 시도에 맞추면 바로 2단계로 승급
-      newBox = prev.box === 0 || prev.box === undefined
-        ? 2
-        : Math.min(prev.box + 1, 5);
+      if (prevBox >= MAX_BOX) {
+        // 6칸(30일)에서 맞히면 졸업 — 이후 퀴즈에 나오지 않음
+        graduated = true;
+        newBox = MAX_BOX;
+      } else {
+        // 새 표현(0단계)을 첫 시도에 맞추면 바로 2단계로 승급
+        newBox = prevBox === 0 ? 2 : Math.min(prevBox + 1, MAX_BOX);
+      }
     } else {
       newBox = 1;
     }
     const interval = BOX_INTERVAL_DAYS[newBox] || 1;
-    srsState[item.id] = {
-      box: newBox,
-      nextReview: addDays(todayStr(), interval),
-      history: [...(prev.history || []), { date: todayStr(), correct: isCorrect }].slice(-10)
-    };
+    const history = [...(prev.history || []), { date: todayStr(), correct: isCorrect }].slice(-10);
+    srsState[item.id] = graduated
+      ? { box: newBox, nextReview: null, graduated: true, graduatedAt: todayStr(), history }
+      : { box: newBox, nextReview: addDays(todayStr(), interval), history };
     await saveSrsState();
+    await countAttendance();
+    if (graduated) applyBadges();
 
-    document.getElementById('quiz-progress').innerHTML = `<span>복습 ${quizIndex + 1} / ${quizOrder.length}</span><span>점수 ${quizScore}</span>`;
+    renderProgress();
 
-    const nextIntervalLabel = isCorrect
-      ? `${interval}일 뒤 다시 나와요 (${newBox}단계로 올라감)`
-      : `내일 다시 나와요 (1단계로 초기화)`;
+    const nextIntervalLabel = graduated
+      ? `🎓 졸업! 이제 퀴즈에 나오지 않아요 (카드에 졸업 배지가 붙어요)`
+      : isCorrect
+        ? `${interval}일 뒤 다시 나와요 (${newBox}단계로 올라감)`
+        : `내일 다시 나와요 (1단계로 초기화)`;
 
     const bodyEl = document.getElementById('quiz-body');
     const card = bodyEl.querySelector('.quiz-card');
@@ -1999,6 +2759,7 @@
     await loadSrsState();
     await loadAttendance();
     renderStreak();
+    applyBadges();
     startQuiz();
   })();
 </script>
